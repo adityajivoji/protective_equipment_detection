@@ -1,0 +1,5 @@
+train: /home/ajivoji/AJ/syook/datasets/partitioned/train/ppe/images
+val: /home/ajivoji/AJ/syook/datasets/partitioned/val/ppe/images
+nc: 9
+names: ['hard-hat', 'gloves', 'mask', 'glasses', 'boots', 'vest', 'ppe-suit', 'ear-protector', 'safety-harness']
+verbose: True

@@ -1,0 +1,4 @@
+train: /home/ajivoji/AJ/syook/datasets/partitioned/train/images
+val: /home/ajivoji/AJ/syook/datasets/partitioned/val/images
+nc: 1
+names: ['person']
