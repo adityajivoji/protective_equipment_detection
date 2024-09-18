@@ -89,6 +89,6 @@ def verify_dataset(images_dir, labels_dir, xmls_dir):
         print(f"Some files are missing in the dataset for directory {images_dir}.")
 
 # Example usage
-data_dir = '/content/drive/MyDrive/Syook/datasets/'
-output_dir = '/content/drive/MyDrive/Syook/datasets/partitioned'
+data_dir = 'datasets/'
+output_dir = 'datasets/partitioned'
 split_dataset(data_dir, output_dir)

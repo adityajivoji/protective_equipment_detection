@@ -151,8 +151,8 @@ def augment_minority_classes(input_dir, output_dir, classes_file, minority_class
             cv2.imwrite(verification_img_path, verification_img)
 
 if __name__ == "__main__":
-    input_dir = '/content/drive/MyDrive/Syook/datasets/'
-    output_dir = '/content/drive/MyDrive/Syook/datasets/'
-    classes_file = "/content/drive/MyDrive/Syook/datasets/classes.txt"
+    input_dir = 'datasets/'
+    output_dir = 'datasets/'
+    classes_file = "datasets/classes.txt"
     minority_classes = ["mask", "vest", "glasses", "ear-protector"]
     augment_minority_classes(input_dir, output_dir, classes_file, minority_classes)

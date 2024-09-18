@@ -58,7 +58,7 @@ def update_annotations(input_dir, output_dir, original_img_name, cropped_img_nam
     img_height = int(root.find('size/height').text)
     cropped_width = x2 - x1
     cropped_height = y2 - y1
-    class_map = load_class_map("/content/drive/MyDrive/Syook/datasets/classes.txt")
+    class_map = load_class_map("datasets/classes.txt")
     yolo_annotations = []
 
     for obj in root.findall('object'):
@@ -96,9 +96,9 @@ def update_annotations(input_dir, output_dir, original_img_name, cropped_img_nam
 
 
 
-# class_map = load_class_map("/content/drive/MyDrive/Syook/datasets/classes.txt")
+# class_map = load_class_map("datasets/classes.txt")
 if __name__ == "__main__":
-    input_dir = '/content/drive/MyDrive/Syook/datasets/partitioned/train' # images ka path
-    output_dir = '/content/drive/MyDrive/Syook/datasets/partitioned/train/ppe' # ppe wala path
-    person_model_path = '/content/drive/MyDrive/Syook/runs/detect/yolov8_person_detection/weights/best.pt' # weights
+    input_dir = 'datasets/partitioned/train' # images ka path
+    output_dir = 'datasets/partitioned/train/ppe' # ppe wala path
+    person_model_path = 'runs/detect/yolov8_person_detection/weights/best.pt' # weights
     crop_images_and_update_annotations(input_dir, output_dir, person_model_path)
